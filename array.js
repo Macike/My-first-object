@@ -30,3 +30,17 @@ function std(arr)
   result=Math.sqrt(result);
   return result;
 }
+
+function max (arr)
+{
+  var maximum=arr[0];
+  var len=arr.length;
+  for(var i=1; i<len; i++)
+  {
+    if (maximum < arr[i])
+    {
+      maximum=arr[i];
+    }
+  }
+  return maximum;
+}
