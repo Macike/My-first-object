@@ -1,3 +1,6 @@
+/*@param{array}
+@return summary of array numbers */
+
 function sum (arr)
 {
   var result=0;
@@ -9,6 +12,9 @@ function sum (arr)
   return result;
 }
 
+
+/*@param{array}
+@return average of array */
 function mean(arr)
 {
   var len=arr.length;
@@ -17,6 +23,9 @@ function mean(arr)
   return result;
 }
 
+
+/*@param{array}
+@return  smerova odchylka*/
 function std(arr)
 {
   var len=arr.length;
@@ -30,6 +39,10 @@ function std(arr)
   result=Math.sqrt(result);
   return result;
 }
+
+
+/*@param{array}
+@return  the largest number*/
 
 function max (arr)
 {
