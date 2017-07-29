@@ -109,3 +109,28 @@ function reverse(arr)
   }
 return arr2;
 }
+
+/**
+ * returns array which contains only even numbers
+ *
+ *@param {array}
+ *@return {array}
+ */
+function Even(arr)
+{
+  var arr2 = new Array();
+  var i=0;
+  var j=0;
+  var len=arr.length;
+
+  while(i<len)
+  {
+    if((arr[i] % 2) == 0)
+    {
+      arr2[j]=arr[i];
+      j++;
+    }
+    i++;
+  }
+  return arr2;
+}

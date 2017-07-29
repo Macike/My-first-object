@@ -8,3 +8,5 @@ uzlik.value=m;*/
 //maxIndex(hromadka);
 
 reverse(pole);
+var d=Even(pole);
+var i=Even(hromadka);
