@@ -1,5 +1,9 @@
-/*@param{array}
-@return summary of array numbers */
+/**
+ * makes summary of numbers in the array
+ *
+ *@param {array}
+ *@return {Number}
+  */
 
 function sum (arr)
 {
@@ -13,8 +17,12 @@ function sum (arr)
 }
 
 
-/*@param{array}
-@return average of array */
+/**
+ * makes average value from array values
+ *
+ *@param {array}
+ *@return {Number}
+ */
 function mean(arr)
 {
   var len=arr.length;
@@ -41,9 +49,12 @@ function std(arr)
 }
 
 
-/*@param{array}
-@return  the largest number*/
-
+/**
+ * seeks the largest number from array
+ *
+ *@param {array}
+ *@return {Number}
+*/
 function max (arr)
 {
   var maximum=arr[0];
@@ -56,4 +67,45 @@ function max (arr)
     }
   }
   return maximum;
+}
+
+/**
+ * seeks the index of the biggest number
+ *
+ *@param {array}
+ *@return {Number}
+ */
+function maxIndex(arr)
+{
+  var maximum=arr[0];
+  var index=0;
+  var len=arr.length;
+  for(var i=1; i<len; i++)
+  {
+    if (maximum < arr[i])
+    {
+      maximum=arr[i];
+      index=i;
+    }
+  }
+  return index;
+}
+
+/**
+ * rewrites array upside down
+ *
+ *@param {array}
+ *@return {array}
+ */
+function reverse(arr)
+{
+  var len=arr.length;
+  var arr2=new Array(len);
+  var p=0;
+  for(var i=len-1; i>=0; i--)
+  {
+    arr2[p]=arr[i];
+    p++;
+  }
+return arr2;
 }
