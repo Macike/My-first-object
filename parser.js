@@ -15,7 +15,12 @@ function parser(str)
   {
     if(str[i]==",")
     {
-      res[j]=parseInt(container);
+      var num = parseInt(container);
+
+      if (isNaN(num))
+        throw "Non numerical attribute";
+
+      res[j] = num;
       j++;
       container="";
     }
@@ -25,7 +30,12 @@ function parser(str)
 
         if (i==len-1)
         {
-          res[j]=parseInt(container);
+          num = parseInt(container);
+
+          if (isNaN(num))
+            throw "Non numerical attribute";
+
+            res[j] = num;          
         }
     }
   }

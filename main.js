@@ -7,5 +7,12 @@ reverse(pole);
 var d=Even(pole);
 var i=Even(hromadka);*/
 
-var str = "18,5,7,9,6";
-var p= parser(str);
+var str = "18,5,7,9,6,a";
+try
+{
+    var p= parser(str);
+}
+catch (e)
+{
+    alert(e);
+}
