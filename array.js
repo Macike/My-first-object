@@ -134,3 +134,30 @@ function Even(arr)
   }
   return arr2;
 }
+
+/**
+ * replace two neighboured numbers in array
+ *
+ *@param {array}
+ *@return {array}
+ */
+function replacement(arr)
+{
+  var len=arr.length;
+  var memmory=0;
+
+  if( len % 2==0)
+  {
+    for(var i=0; i<len; i+=2)
+    {
+      memmory=arr[i];
+      arr[i]=arr[i+1];
+      arr[i+1]=memmory;
+    }
+  }
+  else
+  {
+      throw "array has odd length"
+  }
+
+}
