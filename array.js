@@ -161,3 +161,29 @@ function replacement(arr)
   }
 
 }
+
+/**
+ * compares and switches numbers positons
+ *
+ *@param {array}
+ *@return {array}
+ */
+
+ function buble(argument)
+ {
+   var len=argument.length;
+   var memmory=0;
+
+   for(var j=0; j<len;j++)
+   {
+     for(var i=1; i<len; i++)
+     {
+       if(argument[i-1] > argument[i])
+       {
+         memmory=argument[i-1];
+         argument[i-1]=argument[i];
+         argument[i]=memmory;
+       }
+     }
+   }
+ }
