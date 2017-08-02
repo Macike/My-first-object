@@ -28,5 +28,5 @@ if (s==a)
 }
 else
 {
-  alert("zleeeeeeeeeeeeeeeee");
+  alert("zle");
 }
