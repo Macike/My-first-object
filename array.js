@@ -161,3 +161,41 @@ function replacement(arr)
   }
 
 }
+
+/**
+ * makes average value from array values
+ *
+ *@param {array}
+ *@param {function}
+ *@return {Number}
+ */
+function mean2(arr, callback)
+{
+  var len=arr.length;
+  var suma=callback(arr);
+  var result=suma/len;
+  return result;
+}
+
+/**
+*function for standard deviation
+*
+*@param{array}
+*@param{function}
+*@param{function}
+*@return{number}
+*/
+function std2(arr, callback, callback1)
+{
+  var len=arr.length;
+  var result=0;
+  var average= callback(arr, callback1);
+
+  for(var i=0; i<len; i++)
+  {
+    result= result + ((arr[i]-average)*(arr[i]-average));
+  }
+  result /= len;
+  result=Math.sqrt(result);
+  return result;
+}
