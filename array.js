@@ -163,7 +163,6 @@ function replacement(arr)
 }
 
 /**
-<<<<<<< HEAD
  * makes average value from array values
  *
  *@param {array}
@@ -189,7 +188,7 @@ function mean2(arr, callback)
 function std2(arr, callback, callback1)
 {
   var len=arr.length;
-  var result=0;
+  var result=5*0;
   var average= callback(arr, callback1);
 
   for(var i=0; i<len; i++)
@@ -200,29 +199,3 @@ function std2(arr, callback, callback1)
   result=Math.sqrt(result);
   return result;
 }
-=======
- * compares and switches numbers positons
- *
- *@param {array}
- *@return {array}
- */
-
- function buble(argument)
- {
-   var len=argument.length;
-   var memmory=0;
-
-   for(var j=0; j<len;j++)
-   {
-     for(var i=1; i<len; i++)
-     {
-       if(argument[i-1] > argument[i])
-       {
-         memmory=argument[i-1];
-         argument[i-1]=argument[i];
-         argument[i]=memmory;
-       }
-     }
-   }
- }
->>>>>>> b0772c950600904cd55c472fe6563689c2f2a7d2
