@@ -20,9 +20,9 @@ catch (e)
     alert(e);
 }
 
-var a=std2(pole, mean2, sum);
+//var a=std2(pole, mean2, sum);
 
-if (s==a)
+/*if (s==a)
 {
   alert("dobre");
 }
@@ -30,3 +30,5 @@ else
 {
   alert("zle");
 }
+*/
+buble(pole);

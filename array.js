@@ -199,3 +199,28 @@ function std2(arr, callback, callback1)
   result=Math.sqrt(result);
   return result;
 }
+
+/**
+*function sorts the numbers in order
+*
+*@param{array}
+*@return{number}
+*/
+function buble(arr)
+{
+  var memmory=0;
+  var len=arr.length;
+
+  for(var j=0; j<len; j++)
+  {
+    for(var i=0; i<len-1; i++)
+    {
+      if (arr[i] < arr[i+1])
+      {
+        memmory=arr[i];
+        arr[i]=arr[i+1];
+        arr[i+1]=memmory;
+      }
+    }
+  }
+}
